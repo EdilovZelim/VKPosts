@@ -21,9 +21,8 @@ class GalleryCollectionView: UICollectionView, UICollectionViewDelegate, UIColle
         
         delegate = self
         dataSource = self
-        
         backgroundColor = UIColor.white
-        
+        rowLayout.delegate = self
         showsHorizontalScrollIndicator = false
         showsVerticalScrollIndicator = false
         

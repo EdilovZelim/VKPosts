@@ -84,7 +84,7 @@ extension NewsfeedViewController: UITableViewDataSource, UITableViewDelegate {
 //        let cell = tableView.dequeueReusableCell(withIdentifier: NewsfeedCell.reuseId, for: indexPath) as! NewsfeedCell
         let cell  = tableView.dequeueReusableCell(withIdentifier: NewsfeedCodeCell.reuseId, for: indexPath) as! NewsfeedCodeCell
         let cellViewModel = feedViewModel.cells[indexPath.row]
-        cell.delegate = self
+
         cell.set(viewModel: cellViewModel)
         return cell
     }
@@ -99,3 +99,4 @@ extension NewsfeedViewController: UITableViewDataSource, UITableViewDelegate {
         return cellViewModel.sizes.totalHeight
     }
 }
+
