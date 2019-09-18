@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA1C629422E4A1F100A4ACEC /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C629322E4A1F100A4ACEC /* TitleView.swift */; };
+		FA1C629622E4A3A700A4ACEC /* InsetableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C629522E4A3A700A4ACEC /* InsetableTextField.swift */; };
 		FA23C36622BE95750014102B /* NewsfeedCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23C36522BE95750014102B /* NewsfeedCodeCell.swift */; };
 		FA23C37022C9D4640014102B /* GalleryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23C36F22C9D4640014102B /* GalleryCollectionView.swift */; };
 		FA23C37222C9D6380014102B /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23C37122C9D6380014102B /* GalleryCollectionViewCell.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA1C629322E4A1F100A4ACEC /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		FA1C629522E4A3A700A4ACEC /* InsetableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetableTextField.swift; sourceTree = "<group>"; };
 		FA23C36522BE95750014102B /* NewsfeedCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedCodeCell.swift; sourceTree = "<group>"; };
 		FA23C36F22C9D4640014102B /* GalleryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionView.swift; sourceTree = "<group>"; };
 		FA23C37122C9D6380014102B /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -80,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA1C629222E4A1A300A4ACEC /* TitleView */ = {
+			isa = PBXGroup;
+			children = (
+				FA1C629322E4A1F100A4ACEC /* TitleView.swift */,
+				FA1C629522E4A3A700A4ACEC /* InsetableTextField.swift */,
+			);
+			path = TitleView;
+			sourceTree = "<group>";
+		};
 		FA23C36722C8F4410014102B /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +227,7 @@
 		FA576EDC2295FBB000C27A15 /* Newsfeed */ = {
 			isa = PBXGroup;
 			children = (
+				FA1C629222E4A1A300A4ACEC /* TitleView */,
 				FA23C36E22C9D40C0014102B /* GalleryView */,
 				FA23C36C22C8F4F80014102B /* Router */,
 				FA23C36922C8F47B0014102B /* Presenter */,
@@ -338,6 +352,7 @@
 				FA576EE52295FC2400C27A15 /* NewsfeedWorker.swift in Sources */,
 				FA576EC82290D0BC00C27A15 /* NetworkDataFetcher.swift in Sources */,
 				FA576EF822ABC8F500C27A15 /* StringExtension.swift in Sources */,
+				FA1C629622E4A3A700A4ACEC /* InsetableTextField.swift in Sources */,
 				FA576EC122901D2D00C27A15 /* NetworkService.swift in Sources */,
 				FA576EE82295FC2400C27A15 /* NewsfeedViewController.swift in Sources */,
 				FA576EC62290C47800C27A15 /* FeedResponse.swift in Sources */,
@@ -349,6 +364,7 @@
 				FA576E9F228F4F0600C27A15 /* AppDelegate.swift in Sources */,
 				FA576EF022969A8900C27A15 /* NewsfeedCell.swift in Sources */,
 				FA576EF4229BED1D00C27A15 /* WebImageView.swift in Sources */,
+				FA1C629422E4A1F100A4ACEC /* TitleView.swift in Sources */,
 				FA576EE92295FC2400C27A15 /* NewsfeedInteractor.swift in Sources */,
 				FA23C36622BE95750014102B /* NewsfeedCodeCell.swift in Sources */,
 			);

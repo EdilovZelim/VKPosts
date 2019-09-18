@@ -57,7 +57,8 @@ class NewsfeedPresenter: NewsfeedPresentationLogic {
         let sizes = cellLayoutCalculator.sizes(postTex: feedItem.text, photoAttachments: photoAttachments, isFullSizedPost: isFullSized)
         
         return FeedViewModel.Cell.init(postId: feedItem.postId,
-                                       sizes: sizes, iconUrl:profile.photo,
+                                       sizes: sizes,
+                                       iconUrl:profile.photo,
                                        name: profile.name,
                                        date: dateTitle,
                                        text: feedItem.text,

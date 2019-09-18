@@ -33,7 +33,7 @@ final class NewsfeedCodeCell: UITableViewCell {
         overlayThirdLayerbottomView() // третий слой на bottomView
         overlayFourthLayerbottomView() // четвертый слой на bottomView
         
-        moreTexButton.addTarget(self, action: #selector(moreTextButtonTouch), for: .touchUpInside )
+        moreTextButton.addTarget(self, action: #selector(moreTextButtonTouch), for: .touchUpInside )
         
         backgroundColor = .clear
         selectionStyle = .none
@@ -61,7 +61,7 @@ final class NewsfeedCodeCell: UITableViewCell {
         postLabel.frame = viewModel.sizes.postLabelFrame
         
         bottomView.frame = viewModel.sizes.bottomView
-        moreTexButton.frame = viewModel.sizes.moreTexButtonFrame
+        moreTextButton.frame = viewModel.sizes.moreTexButtonFrame
         
 //        if let photoAttachment = viewModel.photoAttachment {
 //            postImageView.set(imageURL: photoAttachment.photoUrlString)
@@ -111,7 +111,7 @@ final class NewsfeedCodeCell: UITableViewCell {
         return label
     }()
     
-    let moreTexButton: UIButton = {
+    let moreTextButton: UIButton = {
         let button = UIButton()
         button.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .medium)
         button.setTitleColor(#colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1), for: .normal)
@@ -349,7 +349,7 @@ final class NewsfeedCodeCell: UITableViewCell {
         cardView.addSubview(postImageView)
         cardView.addSubview(galleryCollectionView )
         cardView.addSubview(bottomView)
-        cardView.addSubview(moreTexButton)
+        cardView.addSubview(moreTextButton)
         
 //        topView constraints
         topView.leftAnchor.constraint(equalTo: cardView.leftAnchor, constant: 8).isActive = true
